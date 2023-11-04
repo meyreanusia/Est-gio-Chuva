@@ -1,0 +1,99 @@
+<section class="discussoes">
+  <div class="discussoes-titulo">
+    <h3>Discussões</h3>
+  </div>
+  <div class="criarDircurssoes" *ngIf="mostrarCriarDircurssoes">
+   
+    <p class="compartilhar">
+      Compartilhe suas ideias ou dúvidas com os autores!
+    </p>
+    <div class="icones">
+      <img src="../../assets/icone1.png" alt="" />
+      <img src="../../assets/icone2.png" alt="" />
+      <img src="../../assets/icone3.png" alt="" />
+    </div>
+    <p class="topicos">
+      Sabia que o maior estímulo no desenvolvimento científico e cultural é a
+      curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+    </p>
+    
+  </div>
+  <button class="btn-create-topic novoTopico" (click)="toggleDivs()" *ngIf="mostrarCriarDircurssoes">+ criar tópico</button>
+
+  <div class="criarNovaDiscurssao" *ngIf="mostrarCriarNovaDiscurssao">
+    <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+    <form action=""  (submit)="enviarFormulario($event)">
+      <label for="Assunto">Assunto</label>
+      <input
+        class="subject"
+        type="text"
+        name=""
+        id="Assunto"
+        placeholder="Defina um tópico sucinto para notificar os autores..."
+      />
+      <label for="Conteudo">Conteúdo</label>
+      <textarea name="conteudo" id="Conteudo" cols="30" rows="10"></textarea>
+      <div>
+        <button type="submit" >Enviar</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="formularioSubmetido"  *ngIf="formularioSubmetido">
+      
+    <strong>Seu tópico foi enviado com sucesso! :D</strong>
+    <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+    <a href="">Descubra outros trabalhos!</a>
+  <button class="criarNovotTopico" (click)="criarNovoTopico()">Criar novo tópico</button>
+
+  </div>
+
+
+  <div class=" answered-topic cardsDircurssoes">
+    <section class="cardEmAnalise" *ngIf="formularioSubmetido">
+      <img src="../../assets/simbolo.png" alt="">
+      <strong>Aguardando feedback dos autores</strong>
+      <a href="">Editar tópico</a>
+    </section>
+
+    <section class="comments-container">
+      <h4 class="ops-topic-subject">Assunto da pergunta aparece aqui</h4>
+      <small>Carlos Henrique Santos</small>
+      <p class="cdDiscurssoes">
+        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo
+        da análise da dimensão e impacto de processo formativo situado impacto
+        de processo formativo processo...
+      </p>
+      <div class="reacoes">
+        <img src="../../assets/maisinformacoes.jpg" alt="mais informações" />
+        <button><img src="../../assets/coracao.png" alt="" /></button> 
+        <a>1 like</a> <a class="ops-topic-subject" (click)="toggleRespostas()">1 resposta</a>
+        
+      </div>
+
+      <div class="comments-container respostas" *ngIf="mostrarRespostas">
+       
+        <div class="conteudo">
+          <section class="conteudoAutor">
+            <strong>Carmila Ferreira Andrade</strong> 
+            <div class="autor">
+              <strong>Autor</strong>
+              <img src="../../assets/simboloLaranja.png" alt="">
+            </div>
+          </section>
+          <div class="comentario ">
+            <p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+
+              Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+
+
+  
+ 
+  </div>
+</section>

@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+.cabecalho {
+  height: 10vh;
+  width: 100%;
+  background-color: #fdf1eb;
+  display: flex;
+}
+.cabecalho div {
+  // width: 18%;
+  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+}
+.cabecalho div h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.cabecalho .titulo {
+  width: 60%;
+  padding: 0px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cabecalho .titulo,
+small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.cabecalho .titulo,
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0px;
+  font-weight: 600;
+}
+.cabecalho .idioma {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  border-radius: 3px;
+}
+
+.idioma select {
+  border: 1px solid #ccc;
+  color: #333;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: none;
+}
+.cabecalho .user {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  align-items: center;
+}
+.cabecalho .user div.dados-user {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background: none;
+}
+
+.cabecalho .user div {
+  background: none;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.cabecalho .user img {
+  width: 45px;
+  height: 45px;
+  margin-left: 40px;
+}
+.cabecalho .user .dados-user small.bemvindo {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  align-self: center;
+}
+
+.cabecalho section.user .containerUser{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cabecalho .user .dados-user small.email {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.user .containerUser .notificacao {
+  border-radius: 10px;
+  background: var(--Danger, #f85959);
+  width: 1rem;
+  height: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding: 3px;
+
+  position: absolute;
+}
+
+.user .containerUser .notificacao p{
+
+    color: #fff;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
