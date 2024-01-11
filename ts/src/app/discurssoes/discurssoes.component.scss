@@ -1,0 +1,424 @@
+.discussoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.criarDircurssoes {
+  width: 90%;
+  border-bottom: 1px solid#E7E7E7;
+}
+.discussoes .criarDircurssoes {
+  width: 100%;
+}
+
+.discussoes .cardsDircurssoes .cardEmAnalise img {
+  width: 20px;
+}
+
+.discussoes .cardsDircurssoes .cardEmAnalise {
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+  background: #dddddd5d;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+  width: 1028px;
+  height: 148px;
+  flex-shrink: 0;
+}
+
+.discussoes .cardsDircurssoes .cardEmAnalise strong {
+  color: #707070;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px 0px;
+}
+
+.discussoes .cardsDircurssoes .cardEmAnalise a {
+  color: #ed7839;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.discussoes > div.discussoes-titulo {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fdf1eb99;
+  height: 40px;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.discussoes > div.discussoes-titulo h3 {
+  color: #4e4e4e;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 125% */
+}
+
+.discussoes div h3 {
+  margin: 0;
+}
+p {
+  padding: 10px;
+}
+.discussoes div p.topicos {
+  color: #595959;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%; /* 19.25px */
+  margin-bottom: 40px;
+}
+.discussoes .icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  padding: 10px;
+}
+
+.novoTopico {
+  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 15px;
+  margin-top: -20px;
+}
+
+// discurssoes
+
+.cardsDircurssoes > section {
+  margin-top: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+
+  width: 1028px;
+  // height: 148px;
+  flex-shrink: 0;
+}
+
+.cardsDircurssoes > section h4 {
+  color: #ed7839;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+.cardsDircurssoes > section small {
+  color: #5c5c5c;
+
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 20px;
+}
+.cardsDircurssoes > section p.cdDiscurssoes {
+  color: #4d4d4d;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  padding-left: 20px;
+}
+.cardsDircurssoes > section .reacoes {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+}
+
+.cardsDircurssoes .reacoes button {
+  background-color: #ed7839;
+  border: none;
+  width: 1.5rem;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24))
+    drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5px;
+}
+
+.cardsDircurssoes > section .reacoes a {
+  color: #757575;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  font-style: none;
+}
+
+div.criarDircurssoes > p.compartilhar {
+  color: #ed7839;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+// Novo topico
+
+.criarNovaDiscurssao {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.criarNovaDiscurssao form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.criarNovaDiscurssao p {
+  color: #5c5c5c;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.criarNovaDiscurssao label {
+  color: #ed7839;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 10px;
+}
+
+.criarNovaDiscurssao input {
+  width: 99%;
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  color: #4d4d4d;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.criarNovaDiscurssao textarea {
+  width: 99%;
+  height: 9rem;
+  margin: 0;
+  padding: 5px;
+  color: #4d4d4d;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.criarNovaDiscurssao form {
+  // position: relative;
+}
+
+.criarNovaDiscurssao form div {
+  margin-top: -0.3rem;
+  margin-right: 0;
+
+  width: 100%;
+
+  height: 2rem;
+  display: flex;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #ccc;
+  background: #eaf1f2;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+body > app-root > main > app-discurssoes > section > button {
+}
+.criarNovaDiscurssao form div button {
+  height: 100%;
+  width: 20%;
+  border: none;
+  border-radius: 0px 0px 4px 0px;
+  background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+
+  color: #fff;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 106.667% */
+}
+
+.novaDiscurssaoEnviada {
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+  background: #dddddd5e;
+  width: 100%;
+}
+
+.formularioSubmetido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90%;
+  border-bottom: solid 1px #e7e7e7;
+
+  padding-bottom: 60px;
+  // position: absolute;
+}
+
+.formularioSubmetido strong {
+  color: #ed7839;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 15px;
+}
+.formularioSubmetido p {
+  margin-top: 18px;
+
+  color: #595959;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%; /* 19.25px */
+}
+.formularioSubmetido a {
+  color: #f48f44;
+  margin-top: 29px;
+  margin-bottom: 60px;
+
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%; /* 19.25px */
+  text-decoration-line: underline;
+}
+
+button.criarNovotTopico {
+  left: 50%;
+
+  margin-top: 4rem;
+  margin-bottom: -4.5rem;
+
+  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 15px;
+  margin-top: -20px;
+
+  width: 235.145px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+// RESPOSTAS COMENTARIOS
+.respostas {
+  margin-top: 30px;
+}
+
+.resposta .conteudo {
+  // display: none;
+  border: 1px solid #e7e7e7;
+}
+
+.respostas .conteudo {
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  background: #f8f8f8;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.respostas .conteudo .conteudoAutor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.respostas .conteudo .conteudoAutor .autor {
+  display: flex;
+  gap: 30px;
+}
+
+.respostas .conteudo .conteudoAutor .autor strong {
+  color: #ed7839;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.respostas .conteudo .conteudoAutor strong {
+  color: #5c5c5c;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.respostas .conteudo .comentario p {
+  padding: 0;
+  color: #4d4d4d;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
